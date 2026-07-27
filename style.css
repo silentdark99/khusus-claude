@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.input-row input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#taskName {
+  flex: 2;
+  min-width: 140px;
+}
+
+#taskStart {
+  flex: 1;
+  min-width: 100px;
+}
+
+#taskDuration {
+  flex: 1;
+  min-width: 90px;
+}
+
+#addButton {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#scheduleList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#scheduleList li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+#scheduleList li.current {
+  background: #fff8d6;
+  border-left: 4px solid #e6b800;
+}
+
+#scheduleList .time {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+#scheduleList .duration {
+  color: #777;
+  min-width: 70px;
+  font-size: 14px;
+}
+
+#scheduleList .name {
+  flex: 1;
+}
+
+#scheduleList li.done .name {
+  text-decoration: line-through;
+  color: #999;
+}
+
+#scheduleList li button {
+  cursor: pointer;
+}
